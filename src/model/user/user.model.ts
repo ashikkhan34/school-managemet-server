@@ -28,6 +28,10 @@ const userSchema = new Schema<IUser>(
       enum: ["admin", "teacher", "student"],
       default: "teacher",
     },
+    image: {
+      type:String,
+      required:[true, "image is required"]
+    }
   },
   {
     timestamps: true,
